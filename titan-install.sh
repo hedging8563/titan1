@@ -1,8 +1,8 @@
 #!/bin/bash
 # 初始化变量
 
-type="2"
-code="B906E082-E936-4C67-BC6A-F3C8516FFA35"
+type=""
+code=""
 nfsurl=""
 folder=""
 already_install_NFS=2
