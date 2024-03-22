@@ -1,11 +1,5 @@
 #!/bin/bash
 
-# Check if running with root privileges, if not, exit
-if [ "$(id -u)" -ne 0 ]; then
-    echo "Please run as root or using sudo."
-    exit 1
-fi
-
 sudo -i
 
 wget https://github.com/Titannet-dao/titan-node/releases/download/v0.1.14/titan_v0.1.14_linux_amd64.tar.gz
