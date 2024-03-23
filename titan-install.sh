@@ -6,6 +6,7 @@ code=""
 nfsurl=""
 folder=""
 already_install_NFS=2
+
 containers=4 # 默认容器数量为4
 
 # 显示帮助信息
