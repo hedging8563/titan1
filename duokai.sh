@@ -13,13 +13,15 @@ echo "节点社区 Telegram 群组:https://t.me/niuwuriji"
 echo "节点社区 Telegram 频道:https://t.me/niuwuriji"
 
 # 自动输入身份码
-id="719AC260-D58C-4555-921A-165F3A5536EA"
+read -rp "输入你的身份码: " id
+id=${id:-719AC260-D58C-4555-921A-165F3A5536EA}
 
 # 自动输入创建的节点数量
-container_count=4
+read -rp "请输入你想要创建的节点数量，单IP限制最多5个节点: " container_count
+container_count=${container_count:-4}
 
-# 自动输入每个节点的硬盘大小
-disk_size_gb=10
+echo "输入的身份码为: $id"
+echo "输入的节点数量为: $container_count"
 
 # 读取加载身份码信息
 read -p "输入你的身份码: " id
