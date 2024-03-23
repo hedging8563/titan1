@@ -20,21 +20,13 @@ read -rp "输入你的身份码: " id
 read -rp "请输入你想要创建的节点数量，单IP限制最多5个节点: " container_count
 4
 
-echo "输入的身份码为: $id"
-echo "输入的节点数量为: $container_count"
-
-# 读取加载身份码信息
-read -p "输入你的身份码: " id
-
-# 让用户输入想要创建的容器数量
-read -p "请输入你想要创建的节点数量，单IP限制最多5个节点: " container_count
-
 # 让用户输入每个节点的硬盘大小限制（以GB为单位）
 read -p "请输入每个节点的硬盘大小限制（以GB为单位，例如：1代表1GB，2代表2GB）: " disk_size_gb
+10
 
 # 询问用户数据卷存放目录，并设置默认值
 read -p "请输入数据卷存放目录 [默认: /mnt/docker_volumes]: " volume_dir
-volume_dir=${volume_dir:-/mnt/docker_volumes}
+/mnt/docker_volumes
 
 apt update
 
